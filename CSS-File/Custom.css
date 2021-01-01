@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+/*Google Font Link*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+/*Variables Name*/
+:root {
+  --Themes-Color: #eff8ff;
+  --Second-Theme: #595758;
+  --Primary-Color: #ffffff;
+  --Banner-H3-Color: #4996fe;
+  --Btn-Font-Color: #34454c;
+}
+
+/*CSS Code Start Here*/
+body {
+  position: relative;
+  background: var(--Primary-Color);
+  font-family: "Roboto", sans-serif;
+}
+
+.Container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*Header CSS Start*/
+.Header-row {
+  background: var(--Primary-Color);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+}
+.Logo-col {
+  float: left;
+  width: 110px;
+  margin-right: 20px;
+  line-height: 103px;
+}
+.Logo-col img {
+  width: 100%;
+}
+.Menu-col {
+  float: right;
+  width: 970px;
+}
+.Menu-col ul {
+  list-style: none;
+  text-align: right;
+  line-height: 60px;
+}
+.Menu-col ul li {
+  display: inline-block;
+}
+.Menu-col ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  margin-left: 20px;
+  font-size: 18px;
+  color: var(--Second-Theme);
+  position: relative;
+}
+.Menu-col ul li a::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0;
+  border-bottom: 2px solid var(--Second-Theme);
+  transition: 0.3s linear;
+}
+.Menu-col ul li a:hover::before {
+  width: 100%;
+}
+
+/*Banner CSS Start*/
+.Banner-Row {
+  background: var(--Primary-Color);
+  width: 100vw;
+  height: 90vh;
+}
+.Banner-Content {
+  overflow: hidden;
+}
+.Banner-Left-Content {
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 220px;
+}
+.Banner-Left-Content h1 {
+  text-transform: uppercase;
+  color: var(--Second-Theme);
+  font-size: 60px;
+}
+.Banner-Left-Content h3 {
+  text-transform: capitalize;
+  font-size: 50px;
+  color: var(--Banner-H3-Color);
+  padding-bottom: 4px;
+}
+.Banner-Left-Content .Btn {
+  text-transform: capitalize;
+  outline: none;
+  background: var(--Second-Theme);
+  color: var(--Primary-Color);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.Banner-Left-Content .Btn:hover {
+  background: var(--Banner-H3-Color);
+  color: var(--Btn-Font-Color);
+  cursor: pointer;
+}
+.Banner-Right-Content {
+  float: right;
+  width: 48%;
+  margin-top: 40px;
+}
+.Banner-Right-Content img {
+  width: 100%;
+}
+.About-row {
+  background: var(--Themes-Color);
+  padding: 70px 0;
+}
+.About-Content {
+  text-align: center;
+}
+.About-Content h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--Second-Theme);
+  margin-bottom: 8px;
+}
+.About-Content .Bar,
+.Course-Title-row .Bar,
+.Contact-Title-row .Bar {
+  width: 60px;
+  height: 2px;
+  background: var(--Banner-H3-Color);
+  margin: 0 auto;
+}
+.About-Content .P-One {
+  margin-top: 90px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.About-Content .P-Two {
+  margin-top: 25px;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/*Services CSS Start*/
+.Services-row {
+  background: var(--Primary-Color);
+  padding: 70px;
+}
+.Course-Title-row {
+  text-align: center;
+  padding: 40px 80px;
+}
+.Course-Title-row h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--Second-Theme);
+  margin-bottom: 8px;
+}
+.Course-Title-row p {
+  text-align: center;
+  margin-top: 25px;
+}
+.Course-Box-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+.Single-course-row {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 26%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--Primary-Color);
+  padding: 30px 25px;
+  border: 1px solid #5957582d;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.Single-course-row:hover {
+  box-shadow: 6px 6px 5px #ecede1, -6px -6px 5px #ffffff;
+  transform: translateY(-8px);
+}
+.Single-course-row .Img-Box {
+  width: 200px;
+}
+.Single-course-row h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: var(--Second-Theme);
+}
+.Single-course-row .P-3 {
+  margin: 0 0 15px 0;
+}
+.Single-course-row h5 {
+  text-transform: capitalize;
+  color: var(--Btn-Font-Color);
+  margin: 15px 0 6px 0;
+  font-size: 15px;
+}
+.Single-course-row .P-4 {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.Single-course-row span {
+  text-transform: uppercase;
+  margin: 18px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.Single-course-row .Btn-2 {
+  outline: none;
+  border: none;
+  background: var(--Banner-H3-Color);
+  color: var(--Primary-Color);
+  text-transform: capitalize;
+  padding: 13px 34px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.Services-row .Btn-2:hover {
+  transform: scale(0.98);
+}
+.Single-course-row .Img-Box img {
+  width: 100%;
+}
+
+/*Contact CSS Start*/
+.Contact-row {
+  background: var(--Themes-Color);
+  padding: 70px 0;
+}
+.Contact-Title-row {
+  text-align: center;
+}
+.Contact-Title-row h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--Second-Theme);
+  margin-bottom: 8px;
+}
+.Contact-Title-row p {
+  margin-top: 20px;
+}
+.Contact-Form-row {
+  padding: 60px 60px;
+  text-align: center;
+}
+.Contact-Form-row input,
+.Contact-Form-row textarea {
+  width: 70%;
+  outline: none;
+  border: 1px solid var(--Banner-H3-Color);
+  margin: 15px 15px 0 15px;
+  height: 30px;
+  font-size: 15px;
+  color: var(--Second-Theme);
+}
+.Contact-Form-row input[type="text"],
+.Contact-Form-row input[type="email"],
+.Contact-Form-row textarea {
+  padding: 4px 8px;
+}
+.Contact-Form-row textarea {
+  height: 60px;
+}
+.Contact-Form-row input[type="submit"] {
+  background: var(--Banner-H3-Color);
+  color: var(--Primary-Color);
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 40px;
+  width: 72%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  text-transform: uppercase;
+}
+.Contact-Form-row input[type="submit"]:hover {
+  background: var(--Second-Theme);
+}
+
+/*Footer CSS Start*/
+.Footer-row {
+  background: var(--Primary-Color);
+  padding: 70px;
+}
+.Footer-Content {
+  text-align: center;
+}
+.Footer-Content h4 {
+  text-transform: capitalize;
+  color: var(--Banner-H3-Color);
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+.Footer-Content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.Footer-Content li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  color: var(--Second-Theme);
+  font-size: 25px;
+  transition: 0.3s;
+}
+.Footer-Content li a:hover {
+  color: var(--Banner-H3-Color);
+}
+.Footer-Content p {
+  font-size: 15px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  color: var(--Banner-H3-Color);
+}
