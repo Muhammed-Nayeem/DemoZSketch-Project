@@ -88,7 +88,8 @@ body {
 .Banner-Row {
   background: var(--Primary-Color);
   width: 100vw;
-  height: 90vh;
+  /* height: 90vh; */
+  padding: 60px 0;
 }
 .Banner-Content {
   overflow: hidden;
@@ -170,11 +171,10 @@ body {
 /*Services CSS Start*/
 .Services-row {
   background: var(--Primary-Color);
-  padding: 70px;
 }
 .Course-Title-row {
   text-align: center;
-  padding: 40px 80px;
+  padding: 80px 80px 30px 80px;
 }
 .Course-Title-row h2 {
   text-transform: uppercase;
@@ -191,7 +191,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 10px;
+  padding: 40px 10px 80px 10px;
 }
 .Single-course-row {
   display: flex;
